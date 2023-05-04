@@ -187,6 +187,16 @@ footer .social-links a:hover{
     background-color: var(--branding-color);
 }
 
+.coder a{
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+
+.coder a:hover{
+    color:var(--branding-color);
+}
+
 @media(max-width:900px){
  h1{
     font-size:45px;
