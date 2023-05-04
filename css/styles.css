@@ -52,7 +52,7 @@ font-size:24px;
 }
 
 .content-container{
-    padding: 160px 20px;
+    padding: 30px 20px;
 }
 
 .content h1{
@@ -123,10 +123,26 @@ line-height:80px;
     padding:120px 60px;
 }
 
-.profile-pic{
-max-width: 80%;
+.navbar-nav .nav-link.active{
+    color:var(--branding-color);
 }
 
+.nav-item{
+    padding:0 15px;
+}
+
+.logo{
+    max-width:120px;
+}
+
+.profile-pic{
+max-width: 90%;
+}
+
+.contact-link{
+    text-decoration: none;
+    color:var(--branding-color);
+}
 
 @media(max-width:900px){
  h1{
