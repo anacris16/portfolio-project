@@ -108,6 +108,7 @@ line-height:80px;
     font-size:18px;
     line-height: 27px;
     padding:15px 30px;
+    margin-left:10px;
 }
 
 .btn-branding:hover{
@@ -160,6 +161,57 @@ max-width: 90%;
 .contact-link{
     text-decoration: none;
     color:var(--branding-color);
+}
+
+.work-container{
+    position:relative;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}  
+
+.middle{
+    transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+.middle a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+.middle a:hover{
+    cursor: pointer;
+    color:var(--secondary-color); 
+    font-weight: bold;
+}
+
+.work-container:hover .image {
+    opacity: 0.3;
+}
+
+.work-container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: var(--branding-color);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 footer .email-link{
@@ -219,6 +271,10 @@ footer .social-links a:hover{
  .project-description{
     padding:0;
     text-align:center;
+ }
+
+ .btn-branding{
+    margin-bottom:10px;
  }
  
 }
